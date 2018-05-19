@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Linux 查看进程和端口查看进程占用的端口号1234567# netstat -atunp | moreActive Internet connections (servers and established)Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program na">
+<meta name="description" content="VS2017编译putty下载putty从putty中选择”Unix source archive”下载 加载工程源码下载后, 解压, 双击”windows\MSVC\putty\putty.dsp”, VS2017加载工程 修改工程属性按如下设置VS2017工程属性.此设置是为了解决问题: 错误 D8016 “/ZI”和“/Gy-”命令行选项不兼容 12“项目”—&amp;gt;“属性”—&amp;gt;“C/">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux 查看进程和端口">
-<meta property="og:url" content="http://yoursite.com/2018/04/14/Linux-查看进程和端口/index.html">
+<meta property="og:title" content="VS2017编译putty">
+<meta property="og:url" content="http://yoursite.com/2018/05/13/VS2017编译putty/index.html">
 <meta property="og:site_name" content="Lazy Stones">
-<meta property="og:description" content="Linux 查看进程和端口查看进程占用的端口号1234567# netstat -atunp | moreActive Internet connections (servers and established)Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program na">
+<meta property="og:description" content="VS2017编译putty下载putty从putty中选择”Unix source archive”下载 加载工程源码下载后, 解压, 双击”windows\MSVC\putty\putty.dsp”, VS2017加载工程 修改工程属性按如下设置VS2017工程属性.此设置是为了解决问题: 错误 D8016 “/ZI”和“/Gy-”命令行选项不兼容 12“项目”—&amp;gt;“属性”—&amp;gt;“C/">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-19T15:05:40.868Z">
+<meta property="og:updated_time" content="2018-05-19T14:55:02.306Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux 查看进程和端口">
-<meta name="twitter:description" content="Linux 查看进程和端口查看进程占用的端口号1234567# netstat -atunp | moreActive Internet connections (servers and established)Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program na">
+<meta name="twitter:title" content="VS2017编译putty">
+<meta name="twitter:description" content="VS2017编译putty下载putty从putty中选择”Unix source archive”下载 加载工程源码下载后, 解压, 双击”windows\MSVC\putty\putty.dsp”, VS2017加载工程 修改工程属性按如下设置VS2017工程属性.此设置是为了解决问题: 错误 D8016 “/ZI”和“/Gy-”命令行选项不兼容 12“项目”—&amp;gt;“属性”—&amp;gt;“C/">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/14/Linux-查看进程和端口/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/13/VS2017编译putty/"/>
 
 
 
 
 
-  <title>Linux 查看进程和端口 | Lazy Stones</title>
+  <title>VS2017编译putty | Lazy Stones</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/14/Linux-查看进程和端口/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/13/VS2017编译putty/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhanglei">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux 查看进程和端口</h1>
+          <h1 class="post-title" itemprop="name headline">VS2017编译putty</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-14T19:21:13+08:00">
-                2018-04-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-13T22:00:29+08:00">
+                2018-05-13
               </time>
             
 
@@ -299,8 +299,17 @@
       
 
       
-        <h1 id="Linux-查看进程和端口"><a href="#Linux-查看进程和端口" class="headerlink" title="Linux 查看进程和端口"></a>Linux 查看进程和端口</h1><h2 id="查看进程占用的端口号"><a href="#查看进程占用的端口号" class="headerlink" title="查看进程占用的端口号"></a>查看进程占用的端口号</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># netstat -atunp | more</span><br><span class="line">Active Internet connections (servers and established)</span><br><span class="line">Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name</span><br><span class="line">tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      1363/cupsd      </span><br><span class="line">tcp        0      0 192.168.189.128:58887   91.189.88.45:80         ESTABLISHED 2121/http       </span><br><span class="line">tcp6       0      0 ::1:631                 :::*                    LISTEN      1363/cupsd      </span><br><span class="line">udp        0      0 0.0.0.0:68              0.0.0.0:*                           803/dhclient</span><br></pre></td></tr></table></figure>
-<h2 id="根据端口号查进程"><a href="#根据端口号查进程" class="headerlink" title="根据端口号查进程"></a>根据端口号查进程</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># lsof -i:631</span><br><span class="line">COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME</span><br><span class="line">cupsd   1363 root    5u  IPv6   6338      0t0  TCP localhost:ipp (LISTEN)</span><br><span class="line">cupsd   1363 root    6u  IPv4   6339      0t0  TCP localhost:ipp (LISTEN)</span><br></pre></td></tr></table></figure>
+        <h1 id="VS2017编译putty"><a href="#VS2017编译putty" class="headerlink" title="VS2017编译putty"></a>VS2017编译putty</h1><h2 id="下载putty"><a href="#下载putty" class="headerlink" title="下载putty"></a>下载putty</h2><p>从<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank" rel="noopener">putty</a>中选择”Unix source archive”下载</p>
+<h2 id="加载工程"><a href="#加载工程" class="headerlink" title="加载工程"></a>加载工程</h2><p>源码下载后, 解压, 双击”windows\MSVC\putty\putty.dsp”, VS2017加载工程</p>
+<h2 id="修改工程属性"><a href="#修改工程属性" class="headerlink" title="修改工程属性"></a>修改工程属性</h2><p>按如下设置VS2017工程属性.<br>此设置是为了解决问题: 错误 D8016 “/ZI”和“/Gy-”命令行选项不兼容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">“项目”—&gt;“属性”—&gt;“C/C++”—&gt;“常规”—&gt;“调试信息格式”—&gt;选择“程序数据库(/Zi)”或“无”</span><br><span class="line">“项目”—&gt;“属性”—&gt;“C/C++”—&gt;“代码生成”—&gt;“启用函数集链接”—&gt;选择“是 (/Gy)”</span><br></pre></td></tr></table></figure>
+<h2 id="修改代码"><a href="#修改代码" class="headerlink" title="修改代码"></a>修改代码</h2><p>1) 修改windows\version.rc2<br>修改前后分别如下, 解决version.rc2 cannot open include file ‘version.h’ 的问题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;version.h&quot;</span><br><span class="line">#include &quot;licence.h&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;../../../version.h&quot;</span><br><span class="line">#include &quot;../../../licence.h&quot;</span><br></pre></td></tr></table></figure>
+<p>2) 修改noshare.c<br>修改前后分别如下, 即注释platform_ssh_share和platform_ssh_share_cleanup的实现.<br>解决问题:<br>winshare.obj : error LNK2005: _platform_ssh_share 已经在 noshare.obj 中定义<br>winshare.obj : error LNK2005: _platform_ssh_share_cleanup 已经在 noshare.obj 中定义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">int platform_ssh_share(const char *name, Conf *conf,</span><br><span class="line">                       Plug downplug, Plug upplug, Socket *sock,</span><br><span class="line">                       char **logtext, char **ds_err, char **us_err,</span><br><span class="line">                       int can_upstream, int can_downstream)</span><br><span class="line">&#123;</span><br><span class="line">    return SHARE_NONE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void platform_ssh_share_cleanup(const char *name)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">int platform_ssh_share(const char *name, Conf *conf,</span><br><span class="line">                       Plug downplug, Plug upplug, Socket *sock,</span><br><span class="line">                       char **logtext, char **ds_err, char **us_err,</span><br><span class="line">                       int can_upstream, int can_downstream)</span><br><span class="line">&#123;</span><br><span class="line">    return SHARE_NONE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void platform_ssh_share_cleanup(const char *name)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+<h2 id="编译工程"><a href="#编译工程" class="headerlink" title="编译工程"></a>编译工程</h2><p>右键工程生成解决方案.</p>
 
       
     </div>
@@ -325,8 +334,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/13/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/05/13/Hexo搭建个人博客/" rel="next" title="Hexo搭建个人博客">
+                <i class="fa fa-chevron-left"></i> Hexo搭建个人博客
               </a>
             
           </div>
@@ -335,8 +344,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/14/大小端/" rel="prev" title="大小端">
-                大小端 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/13/Linux-32-or-64/" rel="prev" title="Linux 32 or 64">
+                Linux 32 or 64 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -451,7 +460,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux-查看进程和端口"><span class="nav-number">1.</span> <span class="nav-text">Linux 查看进程和端口</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看进程占用的端口号"><span class="nav-number">1.1.</span> <span class="nav-text">查看进程占用的端口号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#根据端口号查进程"><span class="nav-number">1.2.</span> <span class="nav-text">根据端口号查进程</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#VS2017编译putty"><span class="nav-number">1.</span> <span class="nav-text">VS2017编译putty</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载putty"><span class="nav-number">1.1.</span> <span class="nav-text">下载putty</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#加载工程"><span class="nav-number">1.2.</span> <span class="nav-text">加载工程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改工程属性"><span class="nav-number">1.3.</span> <span class="nav-text">修改工程属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改代码"><span class="nav-number">1.4.</span> <span class="nav-text">修改代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译工程"><span class="nav-number">1.5.</span> <span class="nav-text">编译工程</span></a></li></ol></li></ol></div>
             
 
           </div>

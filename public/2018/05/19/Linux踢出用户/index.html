@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Linux 查看进程和端口查看进程占用的端口号1234567# netstat -atunp | moreActive Internet connections (servers and established)Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program na">
+<meta name="description" content="Linux踢出用户查看当前登录用户123456789$ whatis w  w                    (1)  - Show who is logged on and what they are doing  $ w  09:49:30 up 1 day, 17:19,  4 users,  load average: 0.00, 0.00, 0.00  USER     TTY">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux 查看进程和端口">
-<meta property="og:url" content="http://yoursite.com/2018/04/14/Linux-查看进程和端口/index.html">
+<meta property="og:title" content="Linux踢出用户">
+<meta property="og:url" content="http://yoursite.com/2018/05/19/Linux踢出用户/index.html">
 <meta property="og:site_name" content="Lazy Stones">
-<meta property="og:description" content="Linux 查看进程和端口查看进程占用的端口号1234567# netstat -atunp | moreActive Internet connections (servers and established)Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program na">
+<meta property="og:description" content="Linux踢出用户查看当前登录用户123456789$ whatis w  w                    (1)  - Show who is logged on and what they are doing  $ w  09:49:30 up 1 day, 17:19,  4 users,  load average: 0.00, 0.00, 0.00  USER     TTY">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-19T15:05:40.868Z">
+<meta property="og:updated_time" content="2018-05-19T14:58:29.218Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux 查看进程和端口">
-<meta name="twitter:description" content="Linux 查看进程和端口查看进程占用的端口号1234567# netstat -atunp | moreActive Internet connections (servers and established)Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program na">
+<meta name="twitter:title" content="Linux踢出用户">
+<meta name="twitter:description" content="Linux踢出用户查看当前登录用户123456789$ whatis w  w                    (1)  - Show who is logged on and what they are doing  $ w  09:49:30 up 1 day, 17:19,  4 users,  load average: 0.00, 0.00, 0.00  USER     TTY">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/14/Linux-查看进程和端口/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/19/Linux踢出用户/"/>
 
 
 
 
 
-  <title>Linux 查看进程和端口 | Lazy Stones</title>
+  <title>Linux踢出用户 | Lazy Stones</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/14/Linux-查看进程和端口/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/19/Linux踢出用户/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhanglei">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux 查看进程和端口</h1>
+          <h1 class="post-title" itemprop="name headline">Linux踢出用户</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-14T19:21:13+08:00">
-                2018-04-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-19T22:56:57+08:00">
+                2018-05-19
               </time>
             
 
@@ -299,8 +299,12 @@
       
 
       
-        <h1 id="Linux-查看进程和端口"><a href="#Linux-查看进程和端口" class="headerlink" title="Linux 查看进程和端口"></a>Linux 查看进程和端口</h1><h2 id="查看进程占用的端口号"><a href="#查看进程占用的端口号" class="headerlink" title="查看进程占用的端口号"></a>查看进程占用的端口号</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># netstat -atunp | more</span><br><span class="line">Active Internet connections (servers and established)</span><br><span class="line">Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name</span><br><span class="line">tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      1363/cupsd      </span><br><span class="line">tcp        0      0 192.168.189.128:58887   91.189.88.45:80         ESTABLISHED 2121/http       </span><br><span class="line">tcp6       0      0 ::1:631                 :::*                    LISTEN      1363/cupsd      </span><br><span class="line">udp        0      0 0.0.0.0:68              0.0.0.0:*                           803/dhclient</span><br></pre></td></tr></table></figure>
-<h2 id="根据端口号查进程"><a href="#根据端口号查进程" class="headerlink" title="根据端口号查进程"></a>根据端口号查进程</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># lsof -i:631</span><br><span class="line">COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME</span><br><span class="line">cupsd   1363 root    5u  IPv6   6338      0t0  TCP localhost:ipp (LISTEN)</span><br><span class="line">cupsd   1363 root    6u  IPv4   6339      0t0  TCP localhost:ipp (LISTEN)</span><br></pre></td></tr></table></figure>
+        <h1 id="Linux踢出用户"><a href="#Linux踢出用户" class="headerlink" title="Linux踢出用户"></a>Linux踢出用户</h1><h2 id="查看当前登录用户"><a href="#查看当前登录用户" class="headerlink" title="查看当前登录用户"></a>查看当前登录用户</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ whatis w  </span><br><span class="line">w                    (1)  - Show who is logged on and what they are doing  </span><br><span class="line">$ w  </span><br><span class="line">09:49:30 up 1 day, 17:19,  4 users,  load average: 0.00, 0.00, 0.00  </span><br><span class="line">USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT  </span><br><span class="line">root     tty3     -                09:25   23:25   0.10s  0.08s -bash  </span><br><span class="line">root     pts/0    192.168.105.188  09:32    9:38   0.02s  0.02s -bash  </span><br><span class="line">root     pts/1    192.168.105.188  09:36    9:32   0.03s  0.02s -bash  </span><br><span class="line">wilsh    pts/2    192.168.105.188  09:41    0.00s  0.00s  0.00s w</span><br></pre></td></tr></table></figure>
+<h2 id="pkill-踢出用户"><a href="#pkill-踢出用户" class="headerlink" title="pkill 踢出用户"></a>pkill 踢出用户</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ whatis pkill  </span><br><span class="line">pkill [pgrep]        (1)  - look up or signal processes based on name and other attributes</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkill -kill -t pts/2</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkill -9 -u wilsh</span><br></pre></td></tr></table></figure>
+<h2 id="fuser-踢出用户"><a href="#fuser-踢出用户" class="headerlink" title="fuser 踢出用户"></a>fuser 踢出用户</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ whatis fuser        </span><br><span class="line">fuser (1)            - identify processes using files or sockets</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fuser -k /dev/pts/2</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -325,8 +329,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/13/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/05/13/Linux-32-or-64/" rel="next" title="Linux 32 or 64">
+                <i class="fa fa-chevron-left"></i> Linux 32 or 64
               </a>
             
           </div>
@@ -334,10 +338,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/14/大小端/" rel="prev" title="大小端">
-                大小端 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -451,7 +451,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux-查看进程和端口"><span class="nav-number">1.</span> <span class="nav-text">Linux 查看进程和端口</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看进程占用的端口号"><span class="nav-number">1.1.</span> <span class="nav-text">查看进程占用的端口号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#根据端口号查进程"><span class="nav-number">1.2.</span> <span class="nav-text">根据端口号查进程</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux踢出用户"><span class="nav-number">1.</span> <span class="nav-text">Linux踢出用户</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看当前登录用户"><span class="nav-number">1.1.</span> <span class="nav-text">查看当前登录用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pkill-踢出用户"><span class="nav-number">1.2.</span> <span class="nav-text">pkill 踢出用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fuser-踢出用户"><span class="nav-number">1.3.</span> <span class="nav-text">fuser 踢出用户</span></a></li></ol></li></ol></div>
             
 
           </div>

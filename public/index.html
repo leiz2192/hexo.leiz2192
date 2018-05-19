@@ -229,6 +229,513 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/19/Linux踢出用户/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhanglei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lazy Stones">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/19/Linux踢出用户/" itemprop="url">Linux踢出用户</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-19T22:56:57+08:00">
+                2018-05-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Linux踢出用户"><a href="#Linux踢出用户" class="headerlink" title="Linux踢出用户"></a>Linux踢出用户</h1><h2 id="查看当前登录用户"><a href="#查看当前登录用户" class="headerlink" title="查看当前登录用户"></a>查看当前登录用户</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ whatis w  </span><br><span class="line">w                    (1)  - Show who is logged on and what they are doing  </span><br><span class="line">$ w  </span><br><span class="line">09:49:30 up 1 day, 17:19,  4 users,  load average: 0.00, 0.00, 0.00  </span><br><span class="line">USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT  </span><br><span class="line">root     tty3     -                09:25   23:25   0.10s  0.08s -bash  </span><br><span class="line">root     pts/0    192.168.105.188  09:32    9:38   0.02s  0.02s -bash  </span><br><span class="line">root     pts/1    192.168.105.188  09:36    9:32   0.03s  0.02s -bash  </span><br><span class="line">wilsh    pts/2    192.168.105.188  09:41    0.00s  0.00s  0.00s w</span><br></pre></td></tr></table></figure>
+<h2 id="pkill-踢出用户"><a href="#pkill-踢出用户" class="headerlink" title="pkill 踢出用户"></a>pkill 踢出用户</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ whatis pkill  </span><br><span class="line">pkill [pgrep]        (1)  - look up or signal processes based on name and other attributes</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkill -kill -t pts/2</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkill -9 -u wilsh</span><br></pre></td></tr></table></figure>
+<h2 id="fuser-踢出用户"><a href="#fuser-踢出用户" class="headerlink" title="fuser 踢出用户"></a>fuser 踢出用户</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ whatis fuser        </span><br><span class="line">fuser (1)            - identify processes using files or sockets</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fuser -k /dev/pts/2</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/13/Linux-32-or-64/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhanglei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lazy Stones">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/13/Linux-32-or-64/" itemprop="url">Linux 32 or 64</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-13T22:03:57+08:00">
+                2018-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>查看linux是32位还是64位方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;  ~ getconf LONG_BIT                </span><br><span class="line">64</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ file $(where file)</span><br><span class="line">/usr/bin/file: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=a25ff8d819e9d276b6c282d51a572ad74078da3d, stripped</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ uname -a</span><br><span class="line">Linux ubuntu-xenial 4.4.0-112-generic #135-Ubuntu SMP Fri Jan 19 11:48:14 UTC 2018 i686 i686 i686 GNU/Linux</span><br></pre></td></tr></table></figure>
+<ul>
+<li>ixxx的是32位的</li>
+<li>x86_64的是64位</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/13/VS2017编译putty/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhanglei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lazy Stones">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/13/VS2017编译putty/" itemprop="url">VS2017编译putty</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-13T22:00:29+08:00">
+                2018-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="VS2017编译putty"><a href="#VS2017编译putty" class="headerlink" title="VS2017编译putty"></a>VS2017编译putty</h1><h2 id="下载putty"><a href="#下载putty" class="headerlink" title="下载putty"></a>下载putty</h2><p>从<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank" rel="noopener">putty</a>中选择”Unix source archive”下载</p>
+<h2 id="加载工程"><a href="#加载工程" class="headerlink" title="加载工程"></a>加载工程</h2><p>源码下载后, 解压, 双击”windows\MSVC\putty\putty.dsp”, VS2017加载工程</p>
+<h2 id="修改工程属性"><a href="#修改工程属性" class="headerlink" title="修改工程属性"></a>修改工程属性</h2><p>按如下设置VS2017工程属性.<br>此设置是为了解决问题: 错误 D8016 “/ZI”和“/Gy-”命令行选项不兼容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">“项目”—&gt;“属性”—&gt;“C/C++”—&gt;“常规”—&gt;“调试信息格式”—&gt;选择“程序数据库(/Zi)”或“无”</span><br><span class="line">“项目”—&gt;“属性”—&gt;“C/C++”—&gt;“代码生成”—&gt;“启用函数集链接”—&gt;选择“是 (/Gy)”</span><br></pre></td></tr></table></figure>
+<h2 id="修改代码"><a href="#修改代码" class="headerlink" title="修改代码"></a>修改代码</h2><p>1) 修改windows\version.rc2<br>修改前后分别如下, 解决version.rc2 cannot open include file ‘version.h’ 的问题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;version.h&quot;</span><br><span class="line">#include &quot;licence.h&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;../../../version.h&quot;</span><br><span class="line">#include &quot;../../../licence.h&quot;</span><br></pre></td></tr></table></figure>
+<p>2) 修改noshare.c<br>修改前后分别如下, 即注释platform_ssh_share和platform_ssh_share_cleanup的实现.<br>解决问题:<br>winshare.obj : error LNK2005: _platform_ssh_share 已经在 noshare.obj 中定义<br>winshare.obj : error LNK2005: _platform_ssh_share_cleanup 已经在 noshare.obj 中定义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">int platform_ssh_share(const char *name, Conf *conf,</span><br><span class="line">                       Plug downplug, Plug upplug, Socket *sock,</span><br><span class="line">                       char **logtext, char **ds_err, char **us_err,</span><br><span class="line">                       int can_upstream, int can_downstream)</span><br><span class="line">&#123;</span><br><span class="line">    return SHARE_NONE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void platform_ssh_share_cleanup(const char *name)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">int platform_ssh_share(const char *name, Conf *conf,</span><br><span class="line">                       Plug downplug, Plug upplug, Socket *sock,</span><br><span class="line">                       char **logtext, char **ds_err, char **us_err,</span><br><span class="line">                       int can_upstream, int can_downstream)</span><br><span class="line">&#123;</span><br><span class="line">    return SHARE_NONE;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void platform_ssh_share_cleanup(const char *name)</span><br><span class="line">&#123;</span><br><span class="line">&#125;</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+<h2 id="编译工程"><a href="#编译工程" class="headerlink" title="编译工程"></a>编译工程</h2><p>右键工程生成解决方案.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/13/Hexo搭建个人博客/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhanglei">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lazy Stones">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/13/Hexo搭建个人博客/" itemprop="url">Hexo搭建个人博客</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-13T21:51:31+08:00">
+                2018-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>1) 安装Git. 将本地的网页和文章等内容发布或提交到GitHub上需要用到Git.</p>
+<p>2) 安装Node.js. Hexo是基于Node.js的高效静态站点生成框架.</p>
+<p>3) 安装Hexo. 在Node.js安装完成后, 通过控制台执行以下命令即可.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h1 id="创建本地博客"><a href="#创建本地博客" class="headerlink" title="创建本地博客"></a>创建本地博客</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init leiz2192.github.io       //leiz2192.github.io是项目名</span><br><span class="line">$ cd leiz2192.github.io</span><br><span class="line">$ hexo new &quot;YourBlogTitle&quot;         //YourBlogTitle是博客名, 会生成YourBlogTitle.md</span><br><span class="line">### 撰写YourBlogTitle.md</span><br><span class="line">$ hexo g   //生成网页</span><br><span class="line">$ hexo s   //s是server的缩写，启动服务, 通过http://localhost:4000/本地访问</span><br></pre></td></tr></table></figure>
+<h1 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git —save //安装部署插件</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g  //生成网页并发布到GitHub</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/14/安装deb和rpm文件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -544,7 +1051,7 @@
         
           
             <h1 id="1-定义"><a href="#1-定义" class="headerlink" title="1. 定义"></a>1. 定义</h1><ul>
-<li><code>Little-Endian</code>:<code>低位字节排放在内存的低地址端，高位字节排放在内存的高地址端</code>&gt;。(逻辑上的低低高高)</li>
+<li><code>Little-Endian</code>:<code>低位字节排放在内存的低地址端，高位字节排放在内存的高地址端</code>。(逻辑上的低低高高)</li>
 <li><code>Big-Endian</code>:<code>高位字节排放在内存的低地址端，低位字节排放在内存的高地址端</code>。(像数据流一样填充)</li>
 <li>网络字节序：<em>TCP/IP各层协议将字节序定义为<code>Big-Endian</code></em>，因此TCP/IP协议中使用的字节序通常称之为网络字节序。</li>
 </ul>
@@ -677,12 +1184,8 @@
       
         
           
-            <p><strong>1. 查看进程占用的端口号</strong></p>
-<p><strong># <code>netstat -atunp | more</code></strong></p>
-<p>Active Internet connections (servers and established)</p>
-<p>Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name<br>tcp        0      0 127.0.0.1:631           0.0.0.0:<em>               LISTEN      1363/cupsd<br>tcp        0      0 192.168.189.128:58887   91.189.88.45:80         ESTABLISHED 2121/http<br>tcp6       0      0 ::1:631                 :::</em>                    LISTEN      1363/cupsd<br>udp        0      0 0.0.0.0:68              0.0.0.0:*                           803/dhclient </p>
-<p><strong>2. 根据端口号查进程</strong></p>
-<p><strong># <code>lsof -i:631</code></strong><br>COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME<br>cupsd   1363 root    5u  IPv6   6338      0t0  TCP localhost:ipp (LISTEN)<br>cupsd   1363 root    6u  IPv4   6339      0t0  TCP localhost:ipp (LISTEN)</p>
+            <h1 id="Linux-查看进程和端口"><a href="#Linux-查看进程和端口" class="headerlink" title="Linux 查看进程和端口"></a>Linux 查看进程和端口</h1><h2 id="查看进程占用的端口号"><a href="#查看进程占用的端口号" class="headerlink" title="查看进程占用的端口号"></a>查看进程占用的端口号</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># netstat -atunp | more</span><br><span class="line">Active Internet connections (servers and established)</span><br><span class="line">Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name</span><br><span class="line">tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      1363/cupsd      </span><br><span class="line">tcp        0      0 192.168.189.128:58887   91.189.88.45:80         ESTABLISHED 2121/http       </span><br><span class="line">tcp6       0      0 ::1:631                 :::*                    LISTEN      1363/cupsd      </span><br><span class="line">udp        0      0 0.0.0.0:68              0.0.0.0:*                           803/dhclient</span><br></pre></td></tr></table></figure>
+<h2 id="根据端口号查进程"><a href="#根据端口号查进程" class="headerlink" title="根据端口号查进程"></a>根据端口号查进程</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># lsof -i:631</span><br><span class="line">COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME</span><br><span class="line">cupsd   1363 root    5u  IPv6   6338      0t0  TCP localhost:ipp (LISTEN)</span><br><span class="line">cupsd   1363 root    6u  IPv4   6339      0t0  TCP localhost:ipp (LISTEN)</span><br></pre></td></tr></table></figure>
 
           
         
@@ -1055,7 +1558,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

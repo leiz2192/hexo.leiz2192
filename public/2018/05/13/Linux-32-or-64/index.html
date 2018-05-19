@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Linux 查看进程和端口查看进程占用的端口号1234567# netstat -atunp | moreActive Internet connections (servers and established)Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program na">
+<meta name="description" content="查看linux是32位还是64位方法 12&amp;gt;  ~ getconf LONG_BIT                64 12$ file $(where file)/usr/bin/file: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-l">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux 查看进程和端口">
-<meta property="og:url" content="http://yoursite.com/2018/04/14/Linux-查看进程和端口/index.html">
+<meta property="og:title" content="Linux 32 or 64">
+<meta property="og:url" content="http://yoursite.com/2018/05/13/Linux-32-or-64/index.html">
 <meta property="og:site_name" content="Lazy Stones">
-<meta property="og:description" content="Linux 查看进程和端口查看进程占用的端口号1234567# netstat -atunp | moreActive Internet connections (servers and established)Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program na">
+<meta property="og:description" content="查看linux是32位还是64位方法 12&amp;gt;  ~ getconf LONG_BIT                64 12$ file $(where file)/usr/bin/file: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-l">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-19T15:05:40.868Z">
+<meta property="og:updated_time" content="2018-05-13T14:04:51.121Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux 查看进程和端口">
-<meta name="twitter:description" content="Linux 查看进程和端口查看进程占用的端口号1234567# netstat -atunp | moreActive Internet connections (servers and established)Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program na">
+<meta name="twitter:title" content="Linux 32 or 64">
+<meta name="twitter:description" content="查看linux是32位还是64位方法 12&amp;gt;  ~ getconf LONG_BIT                64 12$ file $(where file)/usr/bin/file: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-l">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/14/Linux-查看进程和端口/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/13/Linux-32-or-64/"/>
 
 
 
 
 
-  <title>Linux 查看进程和端口 | Lazy Stones</title>
+  <title>Linux 32 or 64 | Lazy Stones</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/14/Linux-查看进程和端口/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/13/Linux-32-or-64/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhanglei">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Linux 查看进程和端口</h1>
+          <h1 class="post-title" itemprop="name headline">Linux 32 or 64</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-14T19:21:13+08:00">
-                2018-04-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-13T22:03:57+08:00">
+                2018-05-13
               </time>
             
 
@@ -299,8 +299,14 @@
       
 
       
-        <h1 id="Linux-查看进程和端口"><a href="#Linux-查看进程和端口" class="headerlink" title="Linux 查看进程和端口"></a>Linux 查看进程和端口</h1><h2 id="查看进程占用的端口号"><a href="#查看进程占用的端口号" class="headerlink" title="查看进程占用的端口号"></a>查看进程占用的端口号</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># netstat -atunp | more</span><br><span class="line">Active Internet connections (servers and established)</span><br><span class="line">Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name</span><br><span class="line">tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      1363/cupsd      </span><br><span class="line">tcp        0      0 192.168.189.128:58887   91.189.88.45:80         ESTABLISHED 2121/http       </span><br><span class="line">tcp6       0      0 ::1:631                 :::*                    LISTEN      1363/cupsd      </span><br><span class="line">udp        0      0 0.0.0.0:68              0.0.0.0:*                           803/dhclient</span><br></pre></td></tr></table></figure>
-<h2 id="根据端口号查进程"><a href="#根据端口号查进程" class="headerlink" title="根据端口号查进程"></a>根据端口号查进程</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># lsof -i:631</span><br><span class="line">COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME</span><br><span class="line">cupsd   1363 root    5u  IPv6   6338      0t0  TCP localhost:ipp (LISTEN)</span><br><span class="line">cupsd   1363 root    6u  IPv4   6339      0t0  TCP localhost:ipp (LISTEN)</span><br></pre></td></tr></table></figure>
+        <p>查看linux是32位还是64位方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;  ~ getconf LONG_BIT                </span><br><span class="line">64</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ file $(where file)</span><br><span class="line">/usr/bin/file: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=a25ff8d819e9d276b6c282d51a572ad74078da3d, stripped</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ uname -a</span><br><span class="line">Linux ubuntu-xenial 4.4.0-112-generic #135-Ubuntu SMP Fri Jan 19 11:48:14 UTC 2018 i686 i686 i686 GNU/Linux</span><br></pre></td></tr></table></figure>
+<ul>
+<li>ixxx的是32位的</li>
+<li>x86_64的是64位</li>
+</ul>
 
       
     </div>
@@ -325,8 +331,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/13/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/05/13/VS2017编译putty/" rel="next" title="VS2017编译putty">
+                <i class="fa fa-chevron-left"></i> VS2017编译putty
               </a>
             
           </div>
@@ -335,8 +341,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/14/大小端/" rel="prev" title="大小端">
-                大小端 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/19/Linux踢出用户/" rel="prev" title="Linux踢出用户">
+                Linux踢出用户 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -389,17 +395,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -441,22 +438,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux-查看进程和端口"><span class="nav-number">1.</span> <span class="nav-text">Linux 查看进程和端口</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查看进程占用的端口号"><span class="nav-number">1.1.</span> <span class="nav-text">查看进程占用的端口号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#根据端口号查进程"><span class="nav-number">1.2.</span> <span class="nav-text">根据端口号查进程</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
